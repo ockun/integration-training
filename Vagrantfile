@@ -40,10 +40,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
              available: true,
              fastcgi_params: {  CAKE_ENV: "test" }
            }
+         },
+         "ruby-ng": {
+           "ruby_version": "2.4"
          }
        }
        chef.run_list = %w[
          recipe[apt]
+         recipe[ruby-ng::default]
          recipe[phpenv::default]
          recipe[phpenv::composer]
          recipe[phpenv::develop]
