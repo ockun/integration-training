@@ -91,6 +91,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         recipe[phpenv::develop]
         recipe[capistrano]
         recipe[jenkins::master]
+        recipe[jenkins-plugin]
       ]
     end
   end
