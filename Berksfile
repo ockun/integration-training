@@ -14,5 +14,4 @@ cookbook "ruby-ng"
 # P143追記
 cookbook 'jenkins'
 cookbook 'jenkins-plugin', path: "./site-cookbooks/jenkins-plugin"
-
 #cookbook 'jenkins', path: "./site-cookbooks/jenkins"
